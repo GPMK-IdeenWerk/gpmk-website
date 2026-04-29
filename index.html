@@ -26,10 +26,13 @@
   <link rel="stylesheet" href="styles.css" />
 
   <script>
-    // Keep the homepage URL clean: rewrite /index.html → /
-    if (location.pathname === "/index.html") {
-      history.replaceState(null, "", "/" + location.search + location.hash);
-    }
+    // Keep URLs clean: rewrite /any/index.html → /any/
+    (function () {
+      var p = location.pathname;
+      if (p.endsWith("/index.html")) {
+        history.replaceState(null, "", p.slice(0, -10) + location.search + location.hash);
+      }
+    })();
   </script>
 </head>
 <body>
@@ -154,11 +157,11 @@
     <div class="container footer-inner">
       <span>© GPMK IdeenWerk GmbH</span>
       <div class="footer-links">
-        <a href="impressum.html">
+        <a href="/impressum">
           <span class="lang-block" data-lang="de">Impressum</span>
           <span class="lang-block" data-lang="en">Imprint</span>
         </a>
-        <a href="datenschutz.html">
+        <a href="/datenschutz">
           <span class="lang-block" data-lang="de">Datenschutz</span>
           <span class="lang-block" data-lang="en">Privacy</span>
         </a>
