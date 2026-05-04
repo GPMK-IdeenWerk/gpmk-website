@@ -2,7 +2,7 @@
 <svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Email_500</title>
     <g id="Email_500" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#FFFFFF" x="0" y="0" width="500" height="500"></rect>
+        <rect fill="#FFFFFF" x="0" y="0" width="500" height="500" rx="70" ry="70"></rect>
         <g id="Group" transform="translate(82.4144, 50)">
             <circle id="Oval" fill="#00666A" cx="152.585594" cy="200" r="73"></circle>
             <path d="M151.671077,292.8129 C163.267479,292.8129 174.363681,290.651892 184.585747,286.707197 C184.361727,330.537744 149.078497,366 105.586952,366 C61.9557068,366 26.5855943,330.309562 26.5855943,286.283175 C26.5855943,258.650399 40.5190669,234.301433 61.6833464,219.999644 C70.8203594,261.657925 107.640055,292.8129 151.671077,292.8129 Z" id="Combined-Shape" fill="#008991"></path>
